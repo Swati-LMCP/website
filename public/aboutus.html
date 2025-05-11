@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMINCAP Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/aboutus.css">
+</head>
+<body>
+
+  <nav id="main-nav">
+    <a href="index.html"><img src="./assets/images/Lamincap logo.png" alt="Lamincap Logo" class="logo"></a>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">☰</button>
+    <div class="nav-links" id="navLinks">
+        <a href="home.html"><i class="fas fa-house"></i> Home</a>
+        <a href="services.html"><i class="fas fa-cog gear1"></i><i class="fas fa-cog gear2"></i> Services</a>
+        <a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a>
+        <a href="career.html" class="careers-link">
+            <span class="bullseye-wrapper">
+                <i class="fas fa-bullseye"></i>
+                <i class="fas fa-paper-plane dart-icon"></i>
+            </span>
+            Careers
+        </a>
+        <a href="aboutus.html" class="about-nav-wrapper active"   >
+            <span class="link-text">
+                <i class="fas fa-user left-user"></i>
+            <i class="fas fa-user right-user"></i>
+            About Us</span>
+        </a>
+        <a href="contact Us.html" class="contact-link">
+            <span class="svg-envelope-wrapper">
+                <svg class="svg-envelope" viewBox="0 0 64 64" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="card" x="12" y="28" width="40" height="24" rx="2" ry="2" fill="#000"/>
+                    <rect x="8" y="20" width="48" height="32" rx="4" ry="4" fill="#000"/>
+                    <polygon class="flap" points="8,20 32,4 56,20" fill="#f4511e"/>
+                </svg>
+            </span>
+            Contact Us
+        </a>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose">
+        <i class="fas fa-times"></i>
+    </button>
+    <ul class="mobile-links">
+        <li><a href="home.html"><i class="fas fa-house"></i> Home</a></li>
+        <li><a href="services.html"><i class="fas fa-cog"></i> Services</a></li>
+        <li><a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a></li>
+        <li><a href="career.html"><i class="fas fa-bullseye"></i> Careers</a></li>
+        <li><a href="aboutus.html"  class="active"><i class="fas fa-user"></i> About Us</a></li>
+        <li><a href="contact Us.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+    </ul>
+</div>
+<div class="overlay" id="overlay"></div>
+
+
+    <!-- About Hero Section -->
+    <section class="about-hero scroll-animate">
+      <h1 class="scroll-animate delay-1">Our Story</h1>
+      <p class="scroll-animate delay-2">Discover the vision, mission, and values that drive Lamincap Technologies forward</p>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="mission-section">
+      <div class="mission-content">
+          <div class="mission-text scroll-animate">
+              <h2 class="scroll-animate delay-1">Our Mission</h2>
+              <h3 class ="scroll-animate delay-2">Empowering Digital Presence</h3>
+              <p class="scroll-animate delay-3">Lamincap is dedicated to providing businesses with a comprehensive ecosystem for establishing and managing their online presence. We specialize in creating fully responsive and customizable websites, feature-rich Android applications, and sleek iOS apps.</p>
+              <p class="scroll-animate delay-4">Our goal is to offer an all-in-one, innovative, and scalable platform for businesses to enhance their digital footprint across various platforms.</p>
+          </div>
+          <div  class="mission-image scroll-animate delay-3">
+              <img src="https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg" alt="Our Mission">
+          </div>
+      </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section class="vision-section">
+      <div class="vision-content">
+          <div class="vision-text scroll-animate">
+              <h2 class="scroll-animate delay-1">Our Vision</h2>
+              <h3 class="scroll-animate delay-2">Innovating Digital Solutions</h3>
+              <p class="scroll-animate delay-3">We envision a future where businesses seamlessly manage their digital presence through cutting-edge solutions. Our focus is on continuous innovation and user satisfaction, providing AI-powered design assistance, real-time collaboration tools, and eco-friendly hosting options.</p>
+              <p class="scroll-animate delay-4">Join us in shaping the digital landscape with solutions that are not only technologically advanced but also sustainable and user-friendly.</p>
+          </div>
+          <div class="vision-image scroll-animate delay-3">
+              <img src="https://img.freepik.com/free-photo/ideas-progress-vision-inspiration-design-concept_53876-123704.jpg" alt="Our Vision">
+          </div>
+      </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section class="leadership-section scroll-animate">
+      <div class="section-header">
+        <h2 class="scroll-animate delay-1">Our Leadership</h2>
+        <h3 class="scroll-animate delay-2">Meet the visionaries driving Lamincap's success</h3>
+      </div>
+  
+      <div class="slider-wrapper" id="sliderWrapper">
+        <div class="slider-container" id="sliderContainer">
+          <!-- Leader Cards -->
+          <div class="leader-card">
+            <div class="card-inner">
+              <div class="leader-image">
+                <img src="assets/images/CP/MD.jpg" alt="Kodakala Nagachandu">
+              </div>
+              <h3>Kodakala Nagachandu</h3>
+              <p class="position">Managing Director</p>
+              <p class="bio">Strategic decision-maker steering the company's vision, partnerships, and overall growth trajectory</p>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="card-inner">
+              <div class="leader-image">
+                <img src="assets/images/CP/GM.jpg" alt="Surakani Gowtham">
+              </div>
+              <h3>Surakani Gowtham</h3>
+              <p class="position">General Manager</p>
+              <p class="bio">Leads cross-functional teams, drives strategic execution, and ensures business operations align with company goals</p>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="card-inner">
+              <div class="leader-image">
+                <img src="assets/images/CP/HR.jpg" alt="Sakamuri Vaishnavi">
+              </div>
+              <h3>Sakamuri Vaishnavi</h3>
+              <p class="position">HR Manager</p>
+              <p class="bio">Responsible for recruitment, employee engagement, and organizational development</p>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="card-inner">
+              <div class="leader-image">
+                <img src="assets/images/CP/OM.jpg" alt="Shaik Shamsheed">
+              </div>
+              <h3>Shaik Shamsheed</h3>
+              <p class="position">Operational Manager</p>
+              <p class="bio">Oversees day-to-day operations, coordinates departments, and ensures project timelines</p>
+            </div>
+          </div>
+          <div class="leader-card">
+            <div class="card-inner">
+              <div class="leader-image">
+                <img src="assets/images/CP/AGM.jpg" alt="Kiran Kumar Mallela">
+              </div>
+              <h3>Kiran Kumar Mallela</h3>
+              <p class="position">Asst. General Manager</p>
+              <p class="bio">Supports leadership and assists in streamlining internal processes</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Slider Dots -->
+        <div class="slider-nav" id="sliderNav">
+          <div class="slider-bullet active" data-index="0"></div>
+          <div class="slider-bullet" data-index="1"></div>
+          <div class="slider-bullet" data-index="2"></div>
+          <div class="slider-bullet" data-index="3"></div>
+          <div class="slider-bullet" data-index="4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Section -->
+
+  <section class="journey-section">
+      <div class="vision-content">
+          <div class="journey-content scroll-animate">
+              <h2 class="scroll-animate delay-1">Our Journey</h2>
+              <p class="scroll-animate delay-2">Established in Bengaluru, Lamincap has been at the forefront of digital solutions since our inception. From our humble beginnings to becoming a trusted partner for businesses worldwide, our journey has been marked by innovation, dedication, and a commitment to excellence.</p>
+              <p class="scroll-animate delay-3">We've grown from a small team of passionate developers to a full-service digital solutions provider, helping hundreds of businesses establish and grow their online presence.</p>
+          </div>
+          <div class="journey-image scroll-animate delay-3">
+              <img src="assets/images/CP/group.jpg" height="400px" width="550px" style="border-radius: 10px;" alt="Our Vision">
+          </div>
+      </div>
+  </section>
+
+    <!-- Footer Section -->
+    <section class="footer-section" id="footer">
+      <div class="container">
+        <div class="footer-row">
+  
+          <!-- Column 1: Logo + About -->
+          <div class="footer-col">
+            <img src="assets/images/Lamincap logo noBG.png" alt="logo" class="footer-logo">
+            <p class="footer-desc">Lamincap provides a comprehensive software solution empowering businesses to excel in website, Android, and iOS app development. Elevate your digital presence with our innovative platform.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/lamincap-technologies"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/lamincap_technologies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+  
+          <!-- Column 2: Services -->
+          <div class="footer-col">
+            <h4>IT Services</h4>
+            <div class="footer-links">
+              <a href="services.html">Software Development</a>
+              <a href="services.html">Web Development</a>
+              <a href="services.html">Analytic Solutions</a>
+              <a href="services.html">Cloud and DevOps</a>
+              <a href="services.html">Product Design</a>
+            </div>
+          </div>
+  
+          <!-- Column 3: Contact Info -->
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <div><i class="fas fa-map-marker-alt"></i>WorkHub By Novel Office, DODDANAKUNDI INDUSTRIAL AREA, Graphite India Main Rd, Whitefield, Bengaluru, Karnataka 560048</div>
+                 
+              <div><i class="fas fa-envelope"></i>info@lamincap.tech</div>
+              <div><i class="far fa-clock"></i>Opening Hours: 10.00 - 19.00</div>
+            </div>
+          </div>
+  
+          <!-- Column 4: Newsletter -->
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p class="footer-desc">Subscribe to get the latest updates right in your inbox.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+  
+        </div>
+  
+        <!-- Bottom Text -->
+        <div class="footer-bottom">
+          &copy; 2025 Lamincap. All Rights Reserved. 
+          <a href="privacy.html">Privacy Policy</a>
+      </div>
+      </div>
+    </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/aboutus.js"></script>
+    
+</body>
+</html>

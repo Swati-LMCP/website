@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMINCAP Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/services.css">
+    
+</head>
+<body>
+
+    <nav id="main-nav">
+        <a href="index.html"><img src="./assets/images/Lamincap logo.png" alt="Lamincap Logo" class="logo"></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html"><i class="fas fa-house"></i> Home</a>
+            <a href="services.html" class="active"><i class="fas fa-cog gear1"></i><i class="fas fa-cog gear2"></i> Services</a>
+            <a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a>
+            <a href="career.html" class="careers-link">
+                <span class="bullseye-wrapper">
+                    <i class="fas fa-bullseye"></i>
+                    <i class="fas fa-paper-plane dart-icon"></i>
+                </span>
+                Careers
+            </a>
+            <a href="aboutus.html" class="about-nav-wrapper">
+                <span class="link-text">
+                    <i class="fas fa-user left-user"></i>
+                <i class="fas fa-user right-user"></i>
+                About Us</span>
+            </a>
+            <a href="contact Us.html" class="contact-link">
+                <span class="svg-envelope-wrapper">
+                    <svg class="svg-envelope" viewBox="0 0 64 64" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="card" x="12" y="28" width="40" height="24" rx="2" ry="2" fill="#000"/>
+                        <rect x="8" y="20" width="48" height="32" rx="4" ry="4" fill="#000"/>
+                        <polygon class="flap" points="8,20 32,4 56,20" fill="#f4511e"/>
+                    </svg>
+                </span>
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+            <li><a href="home.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="services.html" class="active"><i class="fas fa-cog"></i> Services</a></li>
+            <li><a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a></li>
+            <li><a href="career.html"><i class="fas fa-bullseye"></i> Careers</a></li>
+            <li><a href="aboutus.html"><i class="fas fa-user"></i> About Us</a></li>
+            <li><a href="contact Us.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+
+
+
+
+        <!-- Insert this code inside the <main> tag -->
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <!-- Web Design -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Web Design">
+                            </div>
+                            <div class="card-content">
+                                <h3>Website Design</h3>
+                                <p>Fully responsive and customizable websites</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Website Design</h3>
+                                <div class="card-description">
+                                    <p>Responsive websites optimized for all devices with modern technologies and SEO-friendly structures.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Android Development -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Android Development">
+                            </div>
+                            <div class="card-content">
+                                <h3>Android Development</h3>
+                                <p>Native mobile applications for Android</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Android Development</h3>
+                                <div class="card-description">
+                                    <p>Native Android apps built with Kotlin and Jetpack components following modern architectural patterns.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iOS Development -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="iOS Development">
+                            </div>
+                            <div class="card-content">
+                                <h3>iOS Development</h3>
+                                <p>Premium iOS applications</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>iOS Development</h3>
+                                <div class="card-description">
+                                    <p>Swift-based applications following Apple's human interface guidelines with seamless iOS integration.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="Cloud Solutions">
+                            </div>
+                            <div class="card-content">
+                                <h3>Cloud Solutions</h3>
+                                <p>Scalable cloud infrastructure</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Cloud Services</h3>
+                                <div class="card-description">
+                                    <p>Full-stack cloud solutions including AWS, Azure, and Google Cloud Platform integration and optimization.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Design -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="UI/UX Design">
+                            </div>
+                            <div class="card-content">
+                                <h3>UI/UX Design</h3>
+                                <p>User-centered interface design</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Design Services</h3>
+                                <div class="card-description">
+                                    <p>End-to-end UX research and UI design with prototyping and user testing for optimal engagement.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML Solutions -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="AI Solutions">
+                            </div>
+                            <div class="card-content">
+                                <h3>AI/ML Solutions</h3>
+                                <p>Intelligent automation systems</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>AI Development</h3>
+                                <div class="card-description">
+                                    <p>Custom machine learning models and AI-powered solutions for predictive analytics and automation.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="DevOps">
+                            </div>
+                            <div class="card-content">
+                                <h3>DevOps</h3>
+                                <p>CI/CD pipelines automation</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>DevOps Engineering</h3>
+                                <div class="card-description">
+                                    <p>Implementation of CI/CD pipelines and infrastructure automation using Docker and Kubernetes.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QA & Testing -->
+                <div class="service-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="image-container">
+                                <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="QA Testing">
+                            </div>
+                            <div class="card-content">
+                                <h3>QA & Testing</h3>
+                                <p>Comprehensive quality assurance</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-content">
+                                <h3>Quality Assurance</h3>
+                                <div class="card-description">
+                                    <p>Full-cycle testing services including automation and performance testing for applications.</p>
+                                </div>
+                                <div class="card-actions">
+                                    <a href="contact Us.html"><button class="learn-more">Learn More</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="text-align: center; margin-top: 3rem; margin-bottom: 3rem;">
+                <a href="contact Us.html" class="price-button">
+                    
+                    ₹ Get Price
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+        <!-- Footer Section -->
+        <section class="footer-section" id="footer">
+            <div class="container">
+              <div class="footer-row">
+        
+                <!-- Column 1: Logo + About -->
+                <div class="footer-col">
+                  <img src="assets/images/Lamincap logo noBG.png" alt="logo" class="footer-logo">
+                  <p class="footer-desc">Lamincap provides a comprehensive software solution empowering businesses to excel in website, Android, and iOS app development. Elevate your digital presence with our innovative platform.</p>
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/lamincap-technologies"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/lamincap_technologies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+        
+                <!-- Column 2: Services -->
+                <div class="footer-col">
+                  <h4>IT Services</h4>
+                  <div class="footer-links">
+                    <a href="services.html">Software Development</a>
+                    <a href="services.html">Web Development</a>
+                    <a href="services.html">Analytic Solutions</a>
+                    <a href="services.html">Cloud and DevOps</a>
+                    <a href="services.html">Product Design</a>
+                  </div>
+                </div>
+        
+                <!-- Column 3: Contact Info -->
+                <div class="footer-col">
+                  <h4>Contact Info</h4>
+                  <div class="footer-contact">
+                    <div><i class="fas fa-map-marker-alt"></i>WorkHub By Novel Office, DODDANAKUNDI INDUSTRIAL AREA, Graphite India Main Rd, Whitefield, Bengaluru, Karnataka 560048</div>
+                       
+                    <div><i class="fas fa-envelope"></i>info@lamincap.tech</div>
+                    <div><i class="far fa-clock"></i>Opening Hours: 10.00 - 19.00</div>
+                  </div>
+                </div>
+        
+                <!-- Column 4: Newsletter -->
+                <div class="footer-col">
+                  <h4>Newsletter</h4>
+                  <p class="footer-desc">Subscribe to get the latest updates right in your inbox.</p>
+                  <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                  </form>
+                </div>
+        
+              </div>
+        
+              <!-- Bottom Text -->
+              <div class="footer-bottom">
+                &copy; 2025 Lamincap. All Rights Reserved. 
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+            </div>
+          </section>
+    
+      <!-- Back to Top Button -->
+      <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+      <script src="js/services.js"></script>
+
+    
+</body>
+</html>

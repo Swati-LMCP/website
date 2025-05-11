@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMINCAP Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/career.css">
+</head>
+
+<body>
+    <nav id="main-nav">
+        <a href="index.html"><img src="./assets/images/Lamincap logo.png" alt="Lamincap Logo" class="logo"></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html"><i class="fas fa-house"></i> Home</a>
+            <a href="services.html"><i class="fas fa-cog gear1"></i><i class="fas fa-cog gear2"></i> Services</a>
+            <a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a>
+            <a href="career.html" class="careers-link active"  >
+                <span class="bullseye-wrapper">
+                    <i class="fas fa-bullseye"></i>
+                    <i class="fas fa-paper-plane dart-icon"></i>
+                </span>
+                Careers
+            </a>
+            <a href="aboutus.html" class="about-nav-wrapper">
+                <span class="link-text">
+                    <i class="fas fa-user left-user"></i>
+                <i class="fas fa-user right-user"></i>
+                About Us</span>
+            </a>
+            <a href="contact Us.html" class="contact-link">
+                <span class="svg-envelope-wrapper">
+                    <svg class="svg-envelope" viewBox="0 0 64 64" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="card" x="12" y="28" width="40" height="24" rx="2" ry="2" fill="#000"/>
+                        <rect x="8" y="20" width="48" height="32" rx="4" ry="4" fill="#000"/>
+                        <polygon class="flap" points="8,20 32,4 56,20" fill="#f4511e"/>
+                    </svg>
+                </span>
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+            <li><a href="home.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-cog"></i> Services</a></li>
+            <li><a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a></li>
+            <li><a href="career.html"  class="active"><i class="fas fa-bullseye"></i> Careers</a></li>
+            <li><a href="aboutus.html"><i class="fas fa-user"></i> About Us</a></li>
+            <li><a href="contact Us.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <main class="main-content">
+        <!-- Careers Hero Section -->
+        <section class="careers-hero">
+            <div class="careers-hero-content">
+              <h1>Join Our Team</h1>
+              <p>Explore exciting career opportunities with Lamincap. We are looking for talented individuals to join our dynamic team.</p>
+              <a href="#open-positions" class="btn btn-accent">View Open Positions</a>
+            </div>
+          </section>
+
+        <!-- Perks & Benefits Section -->
+        <section class="perks-section">
+            <div class="container">
+              <h2 class="section-title">Perks & Benefits</h2>
+          
+              <div class="perks">
+                <div class="perk-card">
+                  <div class="perk-icon"><i class="fas fa-graduation-cap"></i></div>
+                  <h3>Learning & Development</h3>
+                  <p>Annual budget for professional growth and continuous learning.</p>
+                </div>
+          
+                <div class="perk-card">
+                  <div class="perk-icon"><i class="fas fa-gift"></i></div>
+                  <h3>Rewards Package</h3>
+                  <p>Competitive salary, bonuses, and equity for outstanding performance.</p>
+                </div>
+          
+                <div class="perk-card">
+                  <div class="perk-icon"><i class="fas fa-heartbeat"></i></div>
+                  <h3>Wellness Programs</h3>
+                  <p>Gym memberships, mental health support, and wellness initiatives.</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- job section -->
+        <div class="header">
+            <h1 id="open-positions"><i class="fas fa-briefcase"></i> Current Openings </h1>
+        </div>
+        
+        <div class="job-listings" id="jobs-container"></div>
+    </main>
+    
+    <!-- Application Modal -->
+    <div id="applyModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2><i class="fas fa-paper-plane"></i> Apply for this Job</h2>
+          <form id="applyForm">
+            <label for="name" class="required-field">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Name (3–50 characters)" required />
+            
+            <label for="email" class="required-field">Email</label>
+            <input type="email" id="email" name="email" placeholder="Valid email address" required />
+            
+            <label for="phoneNo">Phone Number</label>
+            <input type="text" id="phoneNo" name="phoneNo" placeholder="10-digit phone number (optional)" />
+            
+            <label for="shortNote">Cover Note</label>
+            <textarea id="shortNote" name="shortNote" placeholder="Short note (max 200 characters)" rows="3"></textarea>
+            
+            <label for="resume" class="required-field">Resume (PDF only and max file size - 4mb) </label>
+            <input type="file" id="resume" name="resume" accept="application/pdf" required />
+            <div class="tooltip">
+              <i class="fas fa-info-circle" style="color: var(--primary-light);"></i>
+              <span class="tooltiptext">Please upload your resume in PDF format (max 4MB)</span>
+            </div>
+            
+            <input type="hidden" name="jobId" />
+            <input type="hidden" name="roleName" />
+            <button type="submit"><i class="fas fa-paper-plane"></i> Submit Application</button>
+          </form>
+          <p id="responseMessage"></p>
+        </div>
+    </div>
+    
+    <!-- Toast Message -->
+    <div id="toast"></div>
+
+            <!-- Footer Section -->
+    <section class="footer-section" id="footer">
+      <div class="container">
+        <div class="footer-row">
+  
+          <!-- Column 1: Logo + About -->
+          <div class="footer-col">
+            <img src="assets/images/Lamincap logo noBG.png" alt="logo" class="footer-logo">
+            <p class="footer-desc">Lamincap provides a comprehensive software solution empowering businesses to excel in website, Android, and iOS app development. Elevate your digital presence with our innovative platform.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/company/lamincap-technologies"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/lamincap_technologies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+  
+          <!-- Column 2: Services -->
+          <div class="footer-col">
+            <h4>IT Services</h4>
+            <div class="footer-links">
+              <a href="services.html">Software Development</a>
+              <a href="services.html">Web Development</a>
+              <a href="services.html">Analytic Solutions</a>
+              <a href="services.html">Cloud and DevOps</a>
+              <a href="services.html">Product Design</a>
+            </div>
+          </div>
+  
+          <!-- Column 3: Contact Info -->
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <div class="footer-contact">
+              <div><i class="fas fa-map-marker-alt"></i>WorkHub By Novel Office, DODDANAKUNDI INDUSTRIAL AREA, Graphite India Main Rd, Whitefield, Bengaluru, Karnataka 560048</div>
+                  
+              <div><i class="fas fa-envelope"></i>info@lamincap.tech</div>
+              <div><i class="far fa-clock"></i>Opening Hours: 10.00 - 19.00</div>
+            </div>
+          </div>
+  
+          <!-- Column 4: Newsletter -->
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p class="footer-desc">Subscribe to get the latest updates right in your inbox.</p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" required>
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+  
+        </div>
+  
+        <!-- Bottom Text -->
+        <div class="footer-bottom">
+          &copy; 2025 Lamincap. All Rights Reserved. 
+          <a href="privacy.html">Privacy Policy</a>
+      </div>
+      </div>
+    </section>
+        
+          <!-- Back to Top Button -->
+          <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/career.js"></script>
+   
+</body>
+</html>

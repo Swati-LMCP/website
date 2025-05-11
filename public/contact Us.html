@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - LAMINCAP Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact US.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <a href="index.html"><img src="./assets/images/Lamincap logo.png" alt="Lamincap Logo" class="logo"></a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="home.html"><i class="fas fa-house"></i> Home</a>
+            <a href="services.html"><i class="fas fa-cog gear1"></i><i class="fas fa-cog gear2"></i> Services</a>
+            <a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a>
+            <a href="career.html" class="careers-link "  >
+                <span class="bullseye-wrapper">
+                    <i class="fas fa-bullseye"></i>
+                    <i class="fas fa-paper-plane dart-icon"></i>
+                </span>
+                Careers
+            </a>
+            <a href="aboutus.html" class="about-nav-wrapper">
+                <span class="link-text">
+                    <i class="fas fa-user left-user"></i>
+                <i class="fas fa-user right-user"></i>
+                About Us</span>
+            </a>
+            <a href="contact Us.html" class="contact-link active">
+                <span class="svg-envelope-wrapper">
+                    <svg class="svg-envelope" viewBox="0 0 64 64" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="card" x="12" y="28" width="40" height="24" rx="2" ry="2" fill="#000"/>
+                        <rect x="8" y="20" width="48" height="32" rx="4" ry="4" fill="#000"/>
+                        <polygon class="flap" points="8,20 32,4 56,20" fill="#f4511e"/>
+                    </svg>
+                </span>
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-links">
+            <li><a href="home.html"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-cog"></i> Services</a></li>
+            <li><a href="resources.html"><i class="fas fa-lightbulb"></i> Resources</a></li>
+            <li><a href="career.html"  ><i class="fas fa-bullseye"></i> Careers</a></li>
+            <li><a href="aboutus.html"><i class="fas fa-user"></i> About Us</a></li>
+            <li><a href="contact Us.html" class="active"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+   
+    <!-- Contact Section -->
+    <main>
+        <section id="contact" class="contact-section">
+            <div id="toast" class="toast hidden"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="contact-card">
+                            <h2 class="contact-title">Get in Touch</h2>
+                            <form id="contactForm" novalidate>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstName" class="form-label">First Name</label>
+                                            <input type="text" class="form-control" id="firstName" 
+                                                   required placeholder="Enter your first name">
+                                            <div class="error-message" id="firstNameError"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="lastName" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="lastName" 
+                                                    placeholder="Enter your last name">
+                                            <div class="error-message" id="lastNameError"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">Email Address</label>
+                                            <input type="email" class="form-control" id="email" 
+                                                   required placeholder="abc@example.com">
+                                            <div class="error-message" id="emailError"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Phone Number</label>
+                                            <input type="tel" class="form-control" id="phone" 
+                                                   placeholder="Required (10 digits)">
+                                            <div class="error-message" id="phoneError"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="5" 
+                                              required minlength="20" 
+                                              placeholder="Type your message here... (Minimum 20 characters)"></textarea>
+                                    <div class="error-message" id="messageError"></div>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer Section -->
+   <section class="footer-section" id="footer">
+    <div class="container">
+      <div class="footer-row">
+
+        <!-- Column 1: Logo + About -->
+        <div class="footer-col">
+          <img src="assets/images/Lamincap logo noBG.png" alt="logo" class="footer-logo">
+          <p class="footer-desc">Lamincap provides a comprehensive software solution empowering businesses to excel in website, Android, and iOS app development. Elevate your digital presence with our innovative platform.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/lamincap-technologies"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/lamincap_technologies?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Column 2: Services -->
+        <div class="footer-col">
+          <h4>IT Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Software Development</a>
+            <a href="services.html">Web Development</a>
+            <a href="services.html">Analytic Solutions</a>
+            <a href="services.html">Cloud and DevOps</a>
+            <a href="services.html">Product Design</a>
+          </div>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <div class="footer-contact">
+            <div><i class="fas fa-map-marker-alt"></i>WorkHub By Novel Office, DODDANAKUNDI INDUSTRIAL AREA, Graphite India Main Rd, Whitefield, Bengaluru, Karnataka 560048</div>
+                
+            <div><i class="fas fa-envelope"></i>info@lamincap.tech</div>
+            <div><i class="far fa-clock"></i>Opening Hours: 10.00 - 19.00</div>
+          </div>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="footer-desc">Subscribe to get the latest updates right in your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Text -->
+      <div class="footer-bottom">
+        &copy; 2025 Lamincap. All Rights Reserved. 
+        <a href="privacy.html">Privacy Policy</a>
+    </div>
+    </div>
+  </section>
+
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="js/contact US.js"></script>
+   
+</body>
+</html>

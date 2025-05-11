@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LAMINCAP Technologies</title>
+<style>
+
+        body {
+
+            margin: 0;
+
+            padding: 0;
+
+            background: white;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+            overflow: hidden;
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .splash-container {
+
+            text-align: center;
+
+        }
+
+        .logo {
+
+            height: 200px;
+
+            animation: zoomOut 1s ease-out forwards;
+
+        }
+
+        .tagline {
+
+            color: #f4511e;
+
+            font-size: 1.1rem;
+
+            font-weight: 500;
+
+            letter-spacing: 1px;
+
+            opacity: 0;
+
+            margin-top: 20px;
+
+            animation: fadeIn 0.5s ease-in 1s forwards;
+
+        }
+
+        @keyframes zoomOut {
+
+            0% {
+
+                transform: scale(1.5);
+
+                opacity: 0;
+
+            }
+
+            100% {
+
+                transform: scale(1);
+
+                opacity: 1;
+
+            }
+
+        }
+
+        @keyframes fadeIn {
+
+            to {
+
+                opacity: 1;
+
+            }
+
+        }
+
+        .fade-out {
+
+            animation: fadeOut 0.5s ease-out 2s forwards;
+
+        }
+
+        @keyframes fadeOut {
+
+            to {
+
+                opacity: 0;
+
+            }
+
+        }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="splash-container fade-out" id="splashContainer">
+<img src="./assets/images/Lamincap logo.png" alt="Lamincap Logo" class="logo">
+<div class="tagline">Innovate. Create. Elevate.</div>
+</div>
+ 
+    <script>
+
+        setTimeout(() => {
+
+            window.location.href = "home.html"; // Change to your main page URL
+
+        }, 2500); // 1.5s zoom + 0.8s fade in + 1s fade out + 0.7s buffer
+</script>
+</body>
+</html>
+ 
