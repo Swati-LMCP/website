@@ -9,7 +9,8 @@ const applicationRoutes = require("./routes/applicationRoutes");
 const jobRoutes = require("./routes/jobRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 
-dotenv.config(); 
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
 
 const app = express();
 
