@@ -768,6 +768,91 @@
             color: #ff5722;
         }
 
+       /* Responsive fix for Skills alignment in job cards */
+@media (max-width: 768px) {
+    .job-card p {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        word-break: break-word; /* allow long lists to wrap */
+    }
+    .job-card p i,
+    .job-card p strong {
+        flex-shrink: 0;
+        margin-right: 6px;
+    }
+}
+@media (max-width: 768px) {
+    .job-card p i{
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        column-gap: 6px;
+        align-items: start;
+        word-break: break-word;
+    }
+    
+    .job-card p strong {
+        grid-column: 1;
+    }
+    .job-card p .skills-list {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .job-card p {
+  
+      display: grid;
+  
+      grid-template-columns: auto auto 1fr;
+  
+      column-gap: 4px;   /* reduced from 8px */
+  
+      align-items: start;
+  
+      word-break: break-word;
+  
+      white-space: normal;
+  
+    }
+   
+    /* Icon → col. 1 */
+  
+    .job-card p i {
+  
+      grid-column: 1;
+  
+      justify-self: center;
+  
+      margin: 0;         /* ensure no extra margin */
+  
+    }
+   
+    /* Label → col. 2 */
+  
+    .job-card p strong {
+  
+      grid-column: 2;
+  
+      margin: 0;         /* remove default margins */
+  
+    }
+   
+    /* Skills content → col. 3 */
+  
+    .job-card p *:nth-child(n+3) {
+  
+      grid-column: 3;
+  
+      margin: 0;         /* remove potential extra spacing */
+  
+    }
+  
+  }
+  
+   
+
         .view-job-btn, .apply-btn {
             display: inline-block;
             margin-top: 15px;

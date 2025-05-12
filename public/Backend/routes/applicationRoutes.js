@@ -62,21 +62,23 @@ router.post('/apply', upload.single('resume'), async (req, res) => {
 
     // === Email to Candidate ===
     await transporter.sendMail({
-      from: `"LaminCap Technologies" <${process.env.SMTP_EMAIL}>`,
+      from: `"Lamincap Technologies" <${process.env.SMTP_EMAIL}>`,
       to: email,
       subject: `Application Received – ${roleName}`,
   
-      text: `Dear ${name},
+      html: `Dear ${name},
 
-      Thank you for applying for the position of ${roleName} at LaminCap Technologies. 
+<p>Thank you for applying for the position of ${roleName} at Lamincap Technologies.</p>
 
-      We have successfully received your application and our recruitment team will review your profile shortly. If your qualifications match our requirements, we will contact you for the next steps.
+<p>We have successfully received your application, and our recruitment team will review your profile shortly. If your qualifications match our requirements, we will contact you for the next steps.</p>
 
-      We appreciate your interest in joining our team.
+<p>We appreciate your interest in joining our team. </p>
 
-      Best regards,  
-      HR Team  
-      LaminCap Technologies`
+<p>Best regards, </p>
+ <p>HR Team,<br> Lamincap Technologies </p>
+  
+`
+
 
     });
 
@@ -90,24 +92,24 @@ router.post('/apply', upload.single('resume'), async (req, res) => {
     }
 
     await transporter.sendMail({
-      from: `" New Candidature-LaminCap Technologies" <${process.env.SMTP_EMAIL}>`,
+      from: `" New Candidature-Lamincap Technologies" <${process.env.SMTP_EMAIL}>`,
       to: process.env.ADMIN_EMAIL,
       subject: `New Application for ${roleName}`,
       text: `
 A new application has been submitted.
 
-      Name: ${name}
-      Email: ${email}
+Name: ${name}
+Email: ${email}
 Phone: ${phoneNo || 'N/A'}
 Role Applied: ${roleName}
-       Short Note: ${shortNote || 'N/A'}
-      `,
-      attachments: [
-        {
-          filename: resume.originalname,
-          path: resumePath
-        }
-      ]
+Short Note: ${shortNote || 'N/A'}
+  `,
+  attachments: [
+    {
+      filename: resume.originalname,
+      path: resumePath
+    }
+  ]
     });
 
     res.status(200).json({ message: 'Application submitted successfully!' });

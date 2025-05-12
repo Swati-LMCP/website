@@ -9,7 +9,8 @@ const applicationRoutes = require("./routes/applicationRoutes");
 const jobRoutes = require("./routes/jobRoutes");
 const contactRoutes = require("./routes/contactRoutes");
 
-dotenv.config({ path: path.resolve(__dirname, '../.env') });
+dotenv.config();
+console.log("✅ MONGO_URI loaded from .env:", process.env.MONGO_URI); 
 
 
 const app = express();
@@ -32,7 +33,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use("/api/application", applicationRoutes);  
 app.use("/api/jobs", jobRoutes); 
 app.use("/api/contact", contactRoutes);  
-''
+
 
 app.use((err, req, res, next) => {
   console.error("❌ Server error:", err.message);

@@ -25,20 +25,20 @@ router.post("/", async (req, res) => {
 
     // Send email to candidate
     await transporter.sendMail({
-      from: `"LaminCap Technologies" <${process.env.SMTP_EMAIL}>`,
+      from: `"Lamincap Technologies" <${process.env.SMTP_EMAIL}>`,
       to: email,
       subject: "We Have Received Your Contact Request",
       html: `
         <p>Dear ${firstName},</p>
         <p>Thank you for reaching out to us. We have successfully received your message and our team will get back to you as soon as possible.</p>
         <p>If you have any additional information to share in the meantime, feel free to reply to this email.</p>
-        <p>Best regards,<br> LaminCap Technologies Team</p>
+        <p>Best regards,<br> Lamincap Technologies Team</p>
       `
     });
 
     // Send email to admin/HR
     await transporter.sendMail({
-      from: `"New Query-LaminCap Techologies" <${process.env.SMTP_EMAIL}>`,
+      from: `"New Query-Lamincap Techologies" <${process.env.SMTP_EMAIL}>`,
       to: process.env.ADMIN_EMAIL,
       subject: "New Contact Form Submission",
       html: `

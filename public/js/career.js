@@ -54,11 +54,11 @@ async function fetchJobs() {
             jobCard.style.animationDelay = `${index * 0.1}s`;
 
             jobCard.innerHTML = `
-                <h3><i class="fas fa-user-tie"></i> ${job.roleName}</h3>
-                <p><i class="fas fa-tools"></i> <strong>Skills : </strong> ${ job.skills.join(", ")}</p>
-                <p><i class="fas fa-business-time"></i> <strong>Experience : </strong> ${job.experience} years</p>
-                <p><i class="fas fa-calendar-day"></i> <strong>Last Date to Apply  :</strong> ${new Date(job.lastDate).toLocaleDateString()}</p>
-                <p><i class="fas fa-briefcase"></i> <strong>Work Type  :</strong> ${job.workType}</p>
+                <p><i class="fas fa-tools"></i> <strong>Skills :</strong>&nbsp;${job.skills.join(", ")}</p>
+<p><i class="fas fa-business-time"></i> <strong>Experience :</strong>&nbsp;${job.experience} years</p>
+<p><i class="fas fa-calendar-day"></i> <strong>Last Date to Apply :</strong>&nbsp;${new Date(job.lastDate).toLocaleDateString()}</p>
+<p><i class="fas fa-briefcase"></i> <strong>Work Type :</strong>&nbsp;${job.workType}</p>
+
                 <button class="view-job-btn"><i class="fas fa-eye"></i> View Job</button>
                 <div class="job-details">
                     <h4><i class="fas fa-align-left"></i> Description</h4>
