@@ -54,6 +54,7 @@ async function fetchJobs() {
             jobCard.style.animationDelay = `${index * 0.1}s`;
 
             jobCard.innerHTML = `
+                <h3><i class="fas fa-user-tie"></i> ${job.roleName}</h3>
                 <p><i class="fas fa-tools"></i> <strong>Skills :</strong>&nbsp;${job.skills.join(", ")}</p>
 <p><i class="fas fa-business-time"></i> <strong>Experience :</strong>&nbsp;${job.experience} years</p>
 <p><i class="fas fa-calendar-day"></i> <strong>Last Date to Apply :</strong>&nbsp;${new Date(job.lastDate).toLocaleDateString()}</p>
